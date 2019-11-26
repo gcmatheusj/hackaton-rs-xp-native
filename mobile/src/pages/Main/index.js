@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-import { Text } from 'react-native';
-
-// import { Container } from './styles';
+import {Container, ButtonTeacher, ButtonTeacherText } from './styles';
 
 export default class Main extends Component {
   render() {
-    return <Text>tela 1</Text>;
+    return (<Container>
+      <ButtonTeacher>
+        <ButtonTeacherText>Professor</ButtonTeacherText>
+      </ButtonTeacher>
+    </Container>);
   }
 }
