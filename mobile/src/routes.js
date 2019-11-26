@@ -2,12 +2,15 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 import Main from './pages/Main';
-// import User from './pages/User';
+import Professor from './pages/Professor';
+import Aluno from './pages/Aluno';
 
 const Routes = createAppContainer(
   createStackNavigator(
     {
       Main,
+      Professor,
+      Aluno,
     },
     {
       headerLayoutPreset: 'center',

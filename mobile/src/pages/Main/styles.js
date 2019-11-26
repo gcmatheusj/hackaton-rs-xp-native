@@ -14,6 +14,8 @@ export const ButtonTeacher = styled(RectButton)`
   margin-left: 10px;
   padding: 0 12px;
   opacity: ${props => (props.loading ? 0.7 : 1)};
+  height: 46px;
+  margin-bottom: 10px;
 `;
 
 export const ButtonTeacherText = styled.Text``;

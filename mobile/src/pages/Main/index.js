@@ -1,13 +1,17 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-import {Container, ButtonTeacher, ButtonTeacherText } from './styles';
+import { Container, ButtonTeacher, ButtonTeacherText } from './styles';
 
-export default class Main extends Component {
-  render() {
-    return (<Container>
-      <ButtonTeacher>
+export default function Main({ navigation }) {
+  return (
+    <Container>
+      <ButtonTeacher onPress={() => navigation.navigate('Professor')}>
         <ButtonTeacherText>Professor</ButtonTeacherText>
       </ButtonTeacher>
-    </Container>);
-  }
+
+      <ButtonTeacher onPress={() => navigation.navigate('Aluno')}>
+        <ButtonTeacherText>Aluno</ButtonTeacherText>
+      </ButtonTeacher>
+    </Container>
+  );
 }
