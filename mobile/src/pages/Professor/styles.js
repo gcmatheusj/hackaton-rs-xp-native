@@ -2,6 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
+  background: #D8A537
 `;
 
 export const Lista = styled.FlatList`
@@ -13,9 +14,15 @@ export const Atividade = styled.View`
   height: 65px;
   border-radius: 4px;
   margin-bottom: 20px;
-  background: #999;
+  background: #666;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const Nome = styled.Text``;
+export const Name = styled.Text`
+  color: #fff;
+`;
 
-export const Data = styled.Text``;
+export const Data = styled.Text`
+  color: #fff;
+`;

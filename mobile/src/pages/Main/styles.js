@@ -6,16 +6,16 @@ export const Container = styled.View`
   padding: 30px;
   align-items: center;
   justify-content: center;
+  background: #D8A537
 `;
 
 export const ButtonTeacher = styled(RectButton)`
   justify-content: center;
   align-items: center;
-  background: #7159c1;
+  background: #666;
   border-radius: 4px;
   margin-left: 10px;
   padding: 0 12px;
-  opacity: ${props => (props.loading ? 0.7 : 1)};
   height: 46px;
   width: 90%;
   margin-bottom: 10px;
