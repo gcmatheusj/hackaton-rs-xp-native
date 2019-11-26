@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { Container, Lista, Atividade, Name, Data } from './styles';
+import { Container, Lista, Atividade, Name, Data, AddExercice, AddExerciceText, ActivityListText } from './styles';
 
 const activity = [
   {
     id: 1,
     name: 'Atividade 1',
     data: '2019-11-26',
+    teste: 'gostoso'
   },
   {
     id: 2,
@@ -18,11 +19,27 @@ const activity = [
     name: 'Atividade 3',
     data: '2019-11-28',
   },
+  {
+    id: 4,
+    name: 'Atividade 4',
+    data: '2019-11-29',
+  },
+  {
+    id: 5,
+    name: 'Atividade 5',
+    data: '2019-11-30',
+  },
+  {
+    id: 6,
+    name: 'Atividade 6',
+    data: '2019-12-01',
+  },
 ];
 
 export default function Professor({ navigation }) {
   return (
     <Container>
+      <ActivityListText>Lista de Atividades</ActivityListText>
       <Lista
         data={activity}
         keyExtractor={item => String(item.id)}
@@ -33,6 +50,9 @@ export default function Professor({ navigation }) {
           </Atividade>
         )}
       />
+      <AddExercice>
+        <AddExerciceText>Adicionar atividade nova</AddExerciceText>
+      </AddExercice>
     </Container>
   );
 }

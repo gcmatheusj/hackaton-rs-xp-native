@@ -1,13 +1,22 @@
 import styled from 'styled-components/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
-  background: #D8A537
-`;
-
-export const Lista = styled.FlatList`
+  background: #D8A537;
   padding: 20px;
 `;
+
+export const ActivityListText = styled.Text`
+align-items: center;
+  margin: 0 20px 30px;`;
+
+export const Lista = styled.FlatList.attrs({
+  showsVerticalScrollIndicator: false,
+})`
+  margin-top: 20px;
+`;
+
 
 export const Atividade = styled.View`
   align-self: stretch;
@@ -25,4 +34,18 @@ export const Name = styled.Text`
 
 export const Data = styled.Text`
   color: #fff;
+`;
+
+export const AddExercice = styled(RectButton)`
+  background: #228B22;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  height: 60px;
+  border-radius: 4px;
+`;
+
+export const AddExerciceText = styled.Text`
+  color: #fff;
+  font-weight: bold
 `;
