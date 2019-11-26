@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Container, Lista, Atividade, Nome, Data} from './styles';
+import { Container, Lista, Atividade, Nome, Data } from './styles';
 
 const atividades = [
   {
@@ -20,13 +20,13 @@ const atividades = [
   },
 ];
 
-export default function Professor({navigation}) {
+export default function Professor({ navigation }) {
   return (
     <Container>
       <Lista
         data={atividades}
         keyExtractor={item => String(item.id)}
-        renderItem={({item}) => (
+        renderItem={({ item }) => (
           <Atividade onPress={() => navigation.navigate('Detalhes')}>
             <Nome>{item.nome}</Nome>
             <Data>{item.data}</Data>
