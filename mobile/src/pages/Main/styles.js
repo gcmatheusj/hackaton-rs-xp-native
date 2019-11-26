@@ -24,4 +24,6 @@ export const ButtonTeacher = styled(RectButton)`
 export const ButtonTeacherText = styled.Text`
   color: #fff;
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
 `;
