@@ -1,4 +1,4 @@
-import { createAppContainer } from 'react-navigation';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
@@ -17,7 +17,7 @@ const Routes = createAppContainer(
       New,
       Student: createBottomTabNavigator({
         Activities: {
-          screen: createStackNavigator({
+          screen: createSwitchNavigator({
             Student,
             Detail,
           }),
