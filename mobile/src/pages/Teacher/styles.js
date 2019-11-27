@@ -9,9 +9,7 @@ export const Container = styled.View`
 
 export const List = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
-})`
-  margin-top: 20px;
-`;
+})``;
 
 export const Activity = styled.View`
   align-self: stretch;
@@ -35,7 +33,6 @@ export const AddExercice = styled(RectButton)`
   background: #228b22;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px;
   height: 60px;
   border-radius: 4px;
 `;

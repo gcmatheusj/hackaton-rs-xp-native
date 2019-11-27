@@ -43,6 +43,16 @@ const activity = [
     name: 'Atividade 6',
     date: '2019-12-01',
   },
+  {
+    id: 7,
+    name: 'Atividade 7',
+    date: '2019-11-30',
+  },
+  {
+    id: 8,
+    name: 'Atividade 8',
+    date: '2019-12-01',
+  },
 ];
 
 export default function Teacher({ navigation }) {
