@@ -6,8 +6,6 @@ import {
   Atividade,
   Name,
   Data,
-  AddExercice,
-  AddExerciceText,
   ActivityListText,
 } from './styles';
 
@@ -59,9 +57,6 @@ export default function Aluno() {
           </Atividade>
         )}
       />
-      <AddExercice>
-        <AddExerciceText>Adicionar atividade nova</AddExerciceText>
-      </AddExercice>
     </Container>
   );
 }
