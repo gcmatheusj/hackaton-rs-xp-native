@@ -33,7 +33,7 @@ export default function Material({ navigation }) {
         data={activity}
         keyExtractor={item => String(item.id)}
         renderItem={({ item }) => (
-          <Activity onPress={() => navigation.navigate('Detail')}>
+          <Activity onPress={() => navigation.navigate('DetailMaterial')}>
             <Name>{item.name}</Name>
           </Activity>
         )}
