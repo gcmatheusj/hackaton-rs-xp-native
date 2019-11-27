@@ -12,13 +12,13 @@ export const ActivityListText = styled.Text`
   margin: 0 20px 30px;
 `;
 
-export const Lista = styled.FlatList.attrs({
+export const List = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
 })`
   margin-top: 20px;
 `;
 
-export const Atividade = styled.View`
+export const Activity = styled.View`
   align-self: stretch;
   height: 65px;
   border-radius: 4px;
@@ -32,7 +32,7 @@ export const Name = styled.Text`
   color: #fff;
 `;
 
-export const Data = styled.Text`
+export const ActivityDate = styled.Text`
   color: #fff;
 `;
 

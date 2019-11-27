@@ -2,10 +2,10 @@ import React from 'react';
 
 import {
   Container,
-  Lista,
-  Atividade,
+  List,
+  Activity,
   Name,
-  Data,
+  ActivityDate,
   AddExercice,
   AddExerciceText,
   ActivityListText,
@@ -45,18 +45,18 @@ const activity = [
   },
 ];
 
-export default function Professor({ navigation }) {
+export default function Aluno() {
   return (
     <Container>
       <ActivityListText>Lista de Atividades</ActivityListText>
-      <Lista
+      <List
         data={activity}
         keyExtractor={item => String(item.id)}
         renderItem={({ item }) => (
-          <Atividade onPress={() => navigation.navigate('Detalhes')}>
+          <Activity onPress={() => navigation.navigate('Detalhes')}>
             <Name>{item.name}</Name>
-            <Data>{item.data}</Data>
-          </Atividade>
+            <ActivityDate>{item.data}</ActivityDate>
+          </Activity>
         )}
       />
       <AddExercice>

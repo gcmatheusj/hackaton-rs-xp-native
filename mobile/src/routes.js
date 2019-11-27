@@ -2,16 +2,16 @@ import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 import Main from './pages/Main';
-import Professor from './pages/Professor';
-import Aluno from './pages/Aluno';
+import Teacher from './pages/Teacher';
+import Student from './pages/Student';
 import Detail from './pages/Activities/Detail';
 
 const Routes = createAppContainer(
   createStackNavigator(
     {
       Main,
-      Professor,
-      Aluno,
+      Teacher,
+      Student,
       Detail,
     },
     {
