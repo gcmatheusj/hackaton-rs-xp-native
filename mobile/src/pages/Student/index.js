@@ -45,7 +45,7 @@ const activity = [
   },
 ];
 
-export default function Aluno() {
+export default function Aluno({ navigation }) {
   return (
     <Container>
       <ActivityListText>Lista de Atividades</ActivityListText>
