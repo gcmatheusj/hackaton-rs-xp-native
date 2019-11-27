@@ -8,7 +8,7 @@ import Student from './pages/Student';
 import New from './pages/Activities/New';
 import Detail from './pages/Activities/Detail';
 import Material from './pages/Material';
-import DetailMaterial from './pages/Material/DetailMaterial'
+import DetailMaterial from './pages/Material/DetailMaterial';
 
 const Routes = createAppContainer(
   createStackNavigator(
