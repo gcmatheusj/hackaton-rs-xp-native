@@ -29,17 +29,28 @@ const Routes = createAppContainer(
             }
           ),
         },
-        Material,
-      }),
+        {
+          tabBarOptions: {
+            activeTintColor: '#666',
+            inactiveTintColor: '#ccc',
+            labelStyle: {
+              fontSize: 12,
+            },
+            style: {
+              backgroundColor: '#333',
+            },
+          },
+        }
+      ),
     },
     {
       headerLayoutPreset: 'center',
       headerBackTitleVisible: false,
       defaultNavigationOptions: {
         headerStyle: {
-          backgroundColor: '#D8A537',
+          backgroundColor: '#333',
         },
-        headerTintColor: '#FFF',
+        headerTintColor: '#fff',
       },
     }
   )

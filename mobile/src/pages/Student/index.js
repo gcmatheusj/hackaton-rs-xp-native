@@ -8,7 +8,6 @@ const activity = [
     id: 1,
     name: 'Atividade 1',
     data: '2019-11-26',
-    teste: 'gostoso',
   },
   {
     id: 2,
