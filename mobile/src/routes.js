@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import Main from './pages/Main';
 import Teacher from './pages/Teacher';
 import Student from './pages/Student';
+import New from './pages/Activities/New';
 import Detail from './pages/Activities/Detail';
 import Material from './pages/Material';
 
@@ -13,6 +14,7 @@ const Routes = createAppContainer(
     {
       Main,
       Teacher,
+      New,
       Student: createBottomTabNavigator({
         Activities: {
           screen: createStackNavigator({
