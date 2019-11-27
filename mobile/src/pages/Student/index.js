@@ -1,13 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {
-  Container,
-  List,
-  Activity,
-  Name,
-  ActivityDate
-} from './styles';
+import { Container, List, Activity, Name, ActivityDate } from './styles';
 
 const activity = [
   {
@@ -50,7 +44,7 @@ export default function Student({ navigation }) {
         data={activity}
         keyExtractor={item => String(item.id)}
         renderItem={({ item }) => (
-          <Activity onPress={() => navigation.navigate('Detalhes')}>
+          <Activity onPress={() => navigation.navigate('Detail')}>
             <Name>{item.name}</Name>
             <ActivityDate>{item.data}</ActivityDate>
           </Activity>

@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-navigation/bottom-tabs": "^5.0.0-alpha.22",
     "native-base": "^2.13.8",
     "prop-types": "^15.7.2",
     "react": "16.9.0",
@@ -19,6 +20,7 @@
     "react-native-screens": "^1.0.0-alpha.23",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.3",
+    "react-navigation-tabs": "^2.6.0",
     "reactotron-react-native": "^4.0.2",
     "styled-components": "^4.4.1"
   },

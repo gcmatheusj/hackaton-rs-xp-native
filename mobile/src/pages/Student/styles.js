@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
@@ -13,7 +12,7 @@ export const List = styled.FlatList.attrs({
   margin-top: 20px;
 `;
 
-export const Activity = styled.View`
+export const Activity = styled.TouchableOpacity`
   align-self: stretch;
   height: 65px;
   border-radius: 4px;

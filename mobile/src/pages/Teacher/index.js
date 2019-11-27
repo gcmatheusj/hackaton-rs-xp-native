@@ -48,19 +48,19 @@ const activity = [
 export default function Teacher({ navigation }) {
   return (
     <Container>
-        <List
-          data={activity}
-          keyExtractor={item => String(item.id)}
-          renderItem={({ item }) => (
-            <Activity onPress={() => navigation.navigate('Detail')}>
-              <Name>{item.name}</Name>
-              <ActivityDate>{item.data}</ActivityDate>
-            </Activity>
-          )}
-        />
-        <AddExercice>
-          <AddExerciceText>Adicionar atividade nova</AddExerciceText>
-        </AddExercice>
+      <List
+        data={activity}
+        keyExtractor={item => String(item.id)}
+        renderItem={({ item }) => (
+          <Activity onPress={() => navigation.navigate('Detail')}>
+            <Name>{item.name}</Name>
+            <ActivityDate>{item.data}</ActivityDate>
+          </Activity>
+        )}
+      />
+      <AddExercice>
+        <AddExerciceText>Adicionar atividade nova</AddExerciceText>
+      </AddExercice>
     </Container>
   );
 }
