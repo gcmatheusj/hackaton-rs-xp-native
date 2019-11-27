@@ -18,10 +18,17 @@ const Routes = createAppContainer(
       Student: createBottomTabNavigator(
         {
           Activities: {
-            screen: createSwitchNavigator({
-              Student,
-              Detail,
-            }),
+            screen: createSwitchNavigator(
+              {
+                Student,
+                Detail,
+              },
+              {
+                defaultNavigationOptions: {
+                  header: null,
+                },
+              }
+            ),
           },
           Material,
         },
