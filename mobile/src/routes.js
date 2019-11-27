@@ -15,15 +15,29 @@ const Routes = createAppContainer(
       Main,
       Teacher,
       New,
-      Student: createBottomTabNavigator({
-        Activities: {
-          screen: createSwitchNavigator({
-            Student,
-            Detail,
-          }),
+      Student: createBottomTabNavigator(
+        {
+          Activities: {
+            screen: createSwitchNavigator({
+              Student,
+              Detail,
+            }),
+          },
+          Material,
         },
-        Material,
-      }),
+        {
+          tabBarOptions: {
+            activeTintColor: '#666',
+            inactiveTintColor: '#ccc',
+            labelStyle: {
+              fontSize: 12,
+            },
+            style: {
+              backgroundColor: '#333',
+            },
+          },
+        }
+      ),
     },
     {
       headerLayoutPreset: 'center',
