@@ -58,7 +58,7 @@ export default function Teacher({ navigation }) {
           </Activity>
         )}
       />
-      <AddExercice>
+      <AddExercice onPress={() => navigation.navigate('New')}>
         <AddExerciceText>Adicionar atividade nova</AddExerciceText>
       </AddExercice>
     </Container>
