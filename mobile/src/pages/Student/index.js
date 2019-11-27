@@ -8,7 +8,6 @@ import {
   ActivityDate,
   AddExercice,
   AddExerciceText,
-  ActivityListText,
 } from './styles';
 
 const activity = [
@@ -48,7 +47,6 @@ const activity = [
 export default function Aluno() {
   return (
     <Container>
-      <ActivityListText>Lista de Atividades</ActivityListText>
       <List
         data={activity}
         keyExtractor={item => String(item.id)}

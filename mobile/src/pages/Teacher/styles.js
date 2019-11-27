@@ -7,11 +7,6 @@ export const Container = styled.View`
   padding: 20px;
 `;
 
-export const ActivityListText = styled.Text`
-  align-items: center;
-  margin: 0 20px 30px;
-`;
-
 export const List = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
 })`
