@@ -59,3 +59,8 @@ Student.propTypes = {
     navigate: PropTypes.func,
   }).isRequired,
 };
+
+Student.navigationOptions = () => ({
+  title: 'Estudante',
+  header: null,
+});
