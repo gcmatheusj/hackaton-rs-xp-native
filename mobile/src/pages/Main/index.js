@@ -22,3 +22,7 @@ Main.propTypes = {
     navigate: PropTypes.func,
   }).isRequired,
 };
+
+Main.navigationOptions = () => ({
+  header: null,
+});
