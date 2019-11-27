@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {
   Container,
@@ -6,8 +7,6 @@ import {
   Activity,
   Name,
   ActivityDate,
-  AddExercice,
-  AddExerciceText,
   ActivityListText,
 } from './styles';
 
@@ -45,7 +44,7 @@ const activity = [
   },
 ];
 
-export default function Aluno() {
+export default function Student({ navigation }) {
   return (
     <Container>
       <ActivityListText>Lista de Atividades</ActivityListText>
@@ -59,9 +58,12 @@ export default function Aluno() {
           </Activity>
         )}
       />
-      <AddExercice>
-        <AddExerciceText>Adicionar atividade nova</AddExerciceText>
-      </AddExercice>
     </Container>
   );
 }
+
+Student.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};

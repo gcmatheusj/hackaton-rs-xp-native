@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {
   Container,
@@ -48,7 +49,7 @@ const activity = [
 export default function Teacher({ navigation }) {
   return (
     <Container>
-      <ActivityListText> de Atividades</ActivityListText>
+      <ActivityListText>Lista de Atividades</ActivityListText>
       <List
         data={activity}
         keyExtractor={item => String(item.id)}
@@ -65,3 +66,9 @@ export default function Teacher({ navigation }) {
     </Container>
   );
 }
+
+Teacher.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};
