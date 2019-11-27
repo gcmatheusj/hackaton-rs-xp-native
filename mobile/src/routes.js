@@ -27,8 +27,8 @@ const Routes = createAppContainer(
         },
         {
           tabBarOptions: {
-            activeTintColor: '#666',
-            inactiveTintColor: '#ccc',
+            activeTintColor: '#ccc',
+            inactiveTintColor: '#666',
             labelStyle: {
               fontSize: 12,
             },
