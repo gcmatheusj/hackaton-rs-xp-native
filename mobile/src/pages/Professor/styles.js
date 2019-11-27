@@ -3,20 +3,20 @@ import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
-  background: #D8A537;
+  background: #d8a537;
   padding: 20px;
 `;
 
 export const ActivityListText = styled.Text`
-align-items: center;
-  margin: 0 20px 30px;`;
+  align-items: center;
+  margin: 0 20px 30px;
+`;
 
 export const Lista = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
 })`
   margin-top: 20px;
 `;
-
 
 export const Atividade = styled.View`
   align-self: stretch;
@@ -37,7 +37,7 @@ export const Data = styled.Text`
 `;
 
 export const AddExercice = styled(RectButton)`
-  background: #228B22;
+  background: #228b22;
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
@@ -47,5 +47,5 @@ export const AddExercice = styled(RectButton)`
 
 export const AddExerciceText = styled.Text`
   color: #fff;
-  font-weight: bold
+  font-weight: bold;
 `;

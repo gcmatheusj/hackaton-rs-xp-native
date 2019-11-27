@@ -1,13 +1,22 @@
 import React from 'react';
 
-import { Container, Lista, Atividade, Name, Data, AddExercice, AddExerciceText, ActivityListText } from './styles';
+import {
+  Container,
+  Lista,
+  Atividade,
+  Name,
+  Data,
+  AddExercice,
+  AddExerciceText,
+  ActivityListText,
+} from './styles';
 
 const activity = [
   {
     id: 1,
     name: 'Atividade 1',
     data: '2019-11-26',
-    teste: 'gostoso'
+    teste: 'gostoso',
   },
   {
     id: 2,

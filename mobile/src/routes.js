@@ -1,5 +1,5 @@
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 import Main from './pages/Main';
 import Professor from './pages/Professor';
@@ -21,8 +21,8 @@ const Routes = createAppContainer(
         },
         headerTintColor: '#FFF',
       },
-    },
-  ),
+    }
+  )
 );
 
 export default Routes;

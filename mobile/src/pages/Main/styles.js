@@ -6,7 +6,7 @@ export const Container = styled.View`
   padding: 30px;
   align-items: center;
   justify-content: center;
-  background: #D8A537
+  background: #d8a537;
 `;
 
 export const ButtonTeacher = styled(RectButton)`
