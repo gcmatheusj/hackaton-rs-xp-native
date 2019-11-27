@@ -27,7 +27,7 @@ export default function Professor({ navigation }) {
         data={atividades}
         keyExtractor={item => String(item.id)}
         renderItem={({ item }) => (
-          <Atividade onPress={() => navigation.navigate('Detalhes')}>
+          <Atividade onPress={() => navigation.navigate('Detail')}>
             <Nome>{item.nome}</Nome>
             <Data>{item.data}</Data>
           </Atividade>
