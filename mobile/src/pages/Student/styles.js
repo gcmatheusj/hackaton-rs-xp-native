@@ -30,17 +30,3 @@ export const Name = styled.Text`
 export const ActivityDate = styled.Text`
   color: #fff;
 `;
-
-export const AddExercice = styled(RectButton)`
-  background: #228b22;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 100px;
-  height: 60px;
-  border-radius: 4px;
-`;
-
-export const AddExerciceText = styled.Text`
-  color: #fff;
-  font-weight: bold;
-`;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Container, ButtonTeacher, ButtonTeacherText } from './styles';
 
@@ -15,3 +16,9 @@ export default function Main({ navigation }) {
     </Container>
   );
 }
+
+Main.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};

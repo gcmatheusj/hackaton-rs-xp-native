@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import {
   Container,
@@ -63,3 +64,9 @@ export default function Teacher({ navigation }) {
     </Container>
   );
 }
+
+Teacher.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};
